@@ -4,35 +4,37 @@
   text-align: center;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 30px;
 }
 
-.principal{
+.principal {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-a{
+a {
   font-size: 100px;
-  color: #D6EEEE;
+  color: #d6eeee;
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: #707070;
+  cursor: pointer;
 }
 
-.weather-div{
+.weather-div {
   flex-direction: column;
 }
 
-
-h1, h3, .weather-div{
+h1,
+h3,
+.weather-div {
   line-height: 0px;
 }
 
@@ -43,27 +45,26 @@ h1, h3, .weather-div{
 .chuva-div,
 .raiarpor-div,
 .faselua-div,
-.criacao-div{
+.criacao-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 10px;
 }
 
-.pesquisa-div{
+.pesquisa-div {
   display: flex;
   justify-content: center;
 }
 
-form{
+form {
   display: flex;
   flex-direction: row;
   font-size: x-large;
   gap: 40px;
 }
 
-input[type="date"],
-input[type="time"],
+input[type="datetime-local"],
 button {
   background-color: #f0f0f0;
   color: #333;
@@ -73,47 +74,49 @@ button {
   font-family: Arial, sans-serif;
 }
 
-button{
+button {
   font-size: large;
 }
 
-button:hover{
+button:hover {
   background-color: #707070;
   border-color: #707070;
 }
 
-.formblock-div{
+.formblock-div {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.table-div{
+.table-div {
   display: flex;
   justify-content: center;
 }
 
-table{
+table {
   border: 1px solid rgba(255, 255, 255, 0.87);
   border-collapse: collapse;
 }
 
-table td, table th{
+table td,
+table th {
   text-align: center;
   font-size: larger;
 }
 
-th, td {
+th,
+td {
   background-color: rgba(255, 255, 255, 0.87);
   color: #242424;
   padding-right: 1rem;
 }
 
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: #d6eeee;
 }
 
-.navtable-div{
+.navtable-div {
   font-size: larger;
 }
 
@@ -128,6 +131,21 @@ tr:nth-child(even) {
   margin-right: 10px; /* Adiciona um espaço entre os elementos */
 }
 
-.navtable-div li:hover{
+.navtable-div a {
+  font-size: 25px;
+  user-select: none;
+}
+
+.navtable-div a:hover {
   color: #707070;
+  cursor: pointer;
+}
+
+.afalse { 
+  color: #242424;
+}
+
+.navtable-div .afalse:hover{
+  color: #242424;
+  cursor: default;
 }
